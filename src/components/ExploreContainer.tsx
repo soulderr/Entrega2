@@ -1,14 +1,17 @@
-import './ExploreContainer.css';
+import './ExploreContainer.css'; // Importa el archivo de estilos
 
+// Define una interfaz para las propiedades del componente
 interface ContainerProps { }
 
+// Define el componente funcional utilizando la interfaz para las propiedades
 const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
+    // Utiliza JSX para definir la estructura del HTML
     <div id="container">
-      <strong>Ready to create an app?</strong>
-      <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      Hola mundo
     </div>
   );
 };
 
+// Exporta el componente para que pueda ser utilizado en otros archivos
 export default ExploreContainer;
