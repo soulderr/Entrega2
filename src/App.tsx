@@ -10,7 +10,8 @@ import PlacasBase from './pages/PlacasBase';
 import Coolers from './pages/Coolers';
 import Login from './pages/Login';
 import Register from './pages/Register';
-
+import React from 'react';
+import Product from './pages/Product';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -42,6 +43,9 @@ const App: React.FC = () => (
         <Route path="/login" component={Login} exact={true} />
         <Route path="/register" component={Register} exact={true} />
         <Redirect from="/" to="/home" exact />
+        <Route path="/home" component={Home} exact={true} />
+        <Route path="/product/:id" component={Product} exact={true} />
+        <Redirect from="/" to="/home" exact={true} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
